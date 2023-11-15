@@ -1,7 +1,28 @@
-        <nav class="navbar navbar-dark bg-dark fixed-top">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalacion y mantenimiento de hardware y software</title>
+    <link rel="shortcut icon" href="../../Public/Img/Logo.png" class="">
+    <link rel="stylesheet" href="../../Public/css/bootstrap.css">
+    <link rel="stylesheet" href="../../Public/css/timeline.css">
+    <style>
+        *{
+            font-family: monospace;
+        }
+        .banner-img{
+            background-image: url(../../Public/Img/portadaIns.jpg);
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
             <div class="container">
-                    <a class="navbar-brand" href="<?php echo $URL?>">
-                        <img src="<?php echo $URL?>Public/Img/Logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="../../Public/Img/Logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
                     </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
                     <span class="navbar-toggler-icon"></span>
@@ -13,7 +34,7 @@
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li><a class="dropdown-item" href="<?php echo $URL?>">Inicio</a></li>
+                            <li><a class="dropdown-item" href="../../index.html">Inicio</a></li>
                             <!-- Matematica -->
                             <li class="nav-item dropdown mb-3 mt-3">
                                 <a class="nav-link dropdown-toggle btn btn-outline-info fs-5 fw-bold" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
@@ -26,10 +47,10 @@
                                                 GeoGebra
                                             </a>
                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="<?php echo $URL?>Layout/Matematica/Geogebra.php#Concepto">Concepto</a></li>
-                                                <li><a class="dropdown-item" href="<?php echo $URL?>Layout/Matematica/Geogebra.php#Características">Características básicas</a></li>
-                                                <li><a class="dropdown-item" href="<?php echo $URL?>Layout/Matematica/Geogebra.php#Funciones">Funciones principales</a></li>
-                                                <li><a class="dropdown-item" href="<?php echo $URL?>Layout/Matematica/Geogebra.php#Ventajas">Ventajas y Desventajas</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Matematica/Geogebra.html#Concepto">Concepto</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Matematica/Geogebra.html#Características">Características básicas</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Matematica/Geogebra.html#Funciones">Funciones principales</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Matematica/Geogebra.html#Ventajas">Ventajas y Desventajas</a></li>
                                             </ul>
                                         </li>
                                     <!-- Derivadas -->
@@ -38,13 +59,13 @@
                                                 Derivadas
                                             </a>
                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item " href="<?php echo $URL?>Layout/Matematica/Derivadas.php#Concepto">Concepto</a></li>
-                                                <li><a class="dropdown-item" href="<?php echo $URL?>Layout/Matematica/Derivadas.php#usos">Algunos usos</a></li>
-                                                <li><a class="dropdown-item" href="<?php echo $URL?>Layout/Matematica/Derivadas.php#física">Uso en la física</a></li>
+                                                <li><a class="dropdown-item " href="../../Layout/Matematica/Derivadas.html#Concepto">Concepto</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Matematica/Derivadas.html#usos">Algunos usos</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Matematica/Derivadas.html#física">Uso en la física</a></li>
                                                 <hr>
                                                 <p class="text-center">Temas Nuevos</p>
                                                 <hr>
-                                                <li><a class="dropdown-item " href="<?php echo $URL?>Layout/Matematica/Derivadas.php#Compuestas">Compuestas</a></li>
+                                                <li><a class="dropdown-item " href="../../Layout/Matematica/Derivadas.html#Compuestas">Compuestas</a></li>
                                             </ul>
                                         </li>
                                         <!-- Maximos y minimos -->
@@ -53,11 +74,11 @@
                                                 Maximos y minimos
                                             </a>
                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item " href="<?php echo $URL?>Layout/Matematica/MyM.php#Concepto">Concepto</a></li>
-                                                <li><a class="dropdown-item" href="<?php echo $URL?>Layout/Matematica/MyM.php#Concavidad">Concavidad</a></li>
-                                                <li><a class="dropdown-item" href="<?php echo $URL?>Layout/Matematica/MyM.php#Punto">Punto de Inflexión</a></li>
+                                                <li><a class="dropdown-item " href="../../Layout/Matematica/MyM.html#Concepto">Concepto</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Matematica/MyM.html#Concavidad">Concavidad</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Matematica/MyM.html#Punto">Punto de Inflexión</a></li>
                                                 <hr>
-                                                <li><a class="dropdown-item " href="<?php echo $URL?>Layout/Matematica/Derivadas.php#Compuestas">Compuestas</a></li>
+                                                <li><a class="dropdown-item " href="../../Layout/Matematica/Derivadas.html#Compuestas">Compuestas</a></li>
                                             </ul>
                                         </li>
                                     <!-- Integrales -->
@@ -66,10 +87,10 @@
                                                 Integrales
                                             </a>
                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="<?php echo $URL?>Layout/Matematica/Integrales.php#Concepto">Concepto</a></li>
-                                                <li><a class="dropdown-item" href="<?php echo $URL?>Layout/Matematica/Integrales.php#usos">Algunos usos</a></li>
-                                                <li><a class="dropdown-item" href="<?php echo $URL?>Layout/Matematica/Integrales.php#indefinida">Integral indefinida</a></li>
-                                                <li><a class="dropdown-item" href="<?php echo $URL?>Layout/Matematica/Integrales.php#definida">Integral definida</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Matematica/Integrales.html#Concepto">Concepto</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Matematica/Integrales.html#usos">Algunos usos</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Matematica/Integrales.html#indefinida">Integral indefinida</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Matematica/Integrales.html#definida">Integral definida</a></li>
                                             </ul>
                                         </li>
                                 </ul>
@@ -86,12 +107,12 @@
                                                 Página web
                                             </a>
                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="<?php echo $URL?>Layout/Redes/Pagina-web.php#Concepto">Concepto</a></li>
-                                                <li><a class="dropdown-item" href="<?php echo $URL?>Layout/Redes/Pagina-web.php#Lenguajes">Lenguajes</a></li>
-                                                <li><a class="dropdown-item" href="<?php echo $URL?>Layout/Redes/Pagina-web.php#Desarrollo">Desarrollo sostenible</a></li>
-                                                <li><a class="dropdown-item" href="<?php echo $URL?>Layout/Redes/Pagina-web.php#Internet">Internet</a></li>
-                                                <li><a class="dropdown-item" href="<?php echo $URL?>Layout/Redes/Pagina-web.php#Comunicación">Comunicación</a></li>
-                                                <li><a class="dropdown-item" href="<?php echo $URL?>Layout/Redes/Pagina-web.php#Sirve">Para que sirve</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Redes/Pagina-web.html#Concepto">Concepto</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Redes/Pagina-web.html#Lenguajes">Lenguajes</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Redes/Pagina-web.html#Desarrollo">Desarrollo sostenible</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Redes/Pagina-web.html#Internet">Internet</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Redes/Pagina-web.html#Comunicación">Comunicación</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Redes/Pagina-web.html#Sirve">Para que sirve</a></li>
                                             </ul>
                                         </li>
                                     <!-- proteger -->
@@ -100,9 +121,9 @@
                                                 Proteger identidad en internet
                                             </a>
                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="<?php echo $URL?>Layout/Redes/Proteger-Identidad.php#Concepto">Concepto</a></li>
-                                                <li><a class="dropdown-item" href="<?php echo $URL?>Layout/Redes/Proteger-Identidad.php#Elementos">Elementos</a></li>
-                                                <li><a class="dropdown-item" href="<?php echo $URL?>Layout/Redes/Proteger-Identidad.php#Consejos">Consejos </a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Redes/Proteger-Identidad.html#Concepto">Concepto</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Redes/Proteger-Identidad.html#Elementos">Elementos</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Redes/Proteger-Identidad.html#Consejos">Consejos </a></li>
                                             </ul>
                                         </li>
                                     <!-- Tecnologia Inalambrica -->
@@ -111,9 +132,9 @@
                                                 Tecnologia Inalambrica
                                             </a>
                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="<?php echo $URL?>Layout/Redes/Tecnologia-Inalambrica.php#Concepto">Concepto</a></li>
-                                                <li><a class="dropdown-item" href="<?php echo $URL?>Layout/Redes/Tecnologia-Inalambrica.php#Tecnologia">Tecnologias</a></li>
-                                                <li><a class="dropdown-item" href="<?php echo $URL?>Layout/Redes/Tecnologia-Inalambrica.php#5G">Tecnologia 5G</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Redes/Tecnologia-Inalambrica.html#Concepto">Concepto</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Redes/Tecnologia-Inalambrica.html#Tecnologia">Tecnologias</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Redes/Tecnologia-Inalambrica.html#5G">Tecnologia 5G</a></li>
                                             </ul>
                                         </li>
                                 </ul>
@@ -130,9 +151,9 @@
                                                 Dominio de nivel superior
                                             </a>
                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="<?php echo $URL?>Layout/Instalacion/Dominio.php#Concepto">Concepto</a></li>
-                                                <li><a class="dropdown-item" href="<?php echo $URL?>Layout/Instalacion/Dominio.php#Fiabilidad">Fiabilidad</a></li>
-                                                <li><a class="dropdown-item" href="<?php echo $URL?>Layout/Instalacion/Dominio.php#Dominios">Dominios de nivel Superior</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Instalacion/Dominio.html#Concepto">Concepto</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Instalacion/Dominio.html#Fiabilidad">Fiabilidad</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Instalacion/Dominio.html#Dominios">Dominios de nivel Superior</a></li>
                                             </ul>
                                         </li>
                                     <!-- Netiqueta -->
@@ -141,23 +162,23 @@
                                                 Netiqueta
                                             </a>
                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="<?php echo $URL?>Layout/Instalacion/Netiqueta.php#Concepto">Concepto</a></li>
-                                                <li><a class="dropdown-item" href="<?php echo $URL?>Layout/Instalacion/Netiqueta.php#Sirve">Para que sirve</a></li>
-                                                <li><a class="dropdown-item" href="<?php echo $URL?>Layout/Instalacion/Netiqueta.php#Reglas">Reglas </a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Instalacion/Netiqueta.html#Concepto">Concepto</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Instalacion/Netiqueta.html#Sirve">Para que sirve</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Instalacion/Netiqueta.html#Reglas">Reglas </a></li>
                                             </ul>
                                         </li>
                                     <!-- Línea del tiempo -->
-                                        <li ><a class="nav-link text-dark px-1" href="<?php echo $URL?>Layout/Instalacion/Evolucion.php">Linea del tiempo</a></li>
+                                        <li ><a class="nav-link text-dark px-1" href="Layout/Instalacion/Evolucion.html">Linea del tiempo</a></li>
                                     <!-- SO en Tiempo Real-->
                                         <li class="nav-item dropdown">
                                             <a class="nav-link dropdown-toggle text-dark px-1" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
                                                 Sistema Operativo en Tiempo Real
                                             </a>
                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="<?php echo $URL?>Layout/Instalacion/SO-TReal.php#Concepto">Concepto</a></li>
-                                                <li><a class="dropdown-item" href="<?php echo $URL?>Layout/Instalacion/SO-TReal.php#Características">Características</a></li>
-                                                <li><a class="dropdown-item" href="<?php echo $URL?>Layout/Instalacion/SO-TReal.php#Aplicaciones">Aplicaciones</a></li>
-                                                <li><a class="dropdown-item" href="<?php echo $URL?>Layout/Instalacion/SO-TReal.php#Campos">Campos de Aplicación</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Instalacion/SO-TReal.html#Concepto">Concepto</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Instalacion/SO-TReal.html#Características">Características</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Instalacion/SO-TReal.html#Aplicaciones">Aplicaciones</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Instalacion/SO-TReal.html#Campos">Campos de Aplicación</a></li>
                                             </ul>
                                         </li>
                                     <!-- SO Embebido-->
@@ -166,9 +187,9 @@
                                                 Sistema Operativo Embebido
                                             </a>
                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="<?php echo $URL?>Layout/Instalacion/SO/S.O-Embebido.php#Concepto">Concepto</a></li>
-                                                <li><a class="dropdown-item" href="<?php echo $URL?>Layout/Instalacion/SO/S.O-Embebido.php#Características">Características</a></li>
-                                                <li><a class="dropdown-item" href="<?php echo $URL?>Layout/Instalacion/SO/S.O-Embebido.php#Ejemplos">Ejemplos</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Instalacion/SO/S.O-Embebido.html#Concepto">Concepto</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Instalacion/SO/S.O-Embebido.html#Características">Características</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Instalacion/SO/S.O-Embebido.html#Ejemplos">Ejemplos</a></li>
                                             </ul>
                                         </li>
                                     <!-- SO Distribuido-->
@@ -177,19 +198,38 @@
                                                 Sistema Operativo Distribuido
                                             </a>
                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="<?php echo $URL?>Layout/Instalacion/SO/S.O-Distribuido.php#Concepto">Concepto</a></li>
-                                                <li><a class="dropdown-item" href="<?php echo $URL?>Layout/Instalacion/SO/S.O-Distribuido.php#Características">Características</a></li>
-                                                <li><a class="dropdown-item" href="<?php echo $URL?>Layout/Instalacion/SO/S.O-Distribuido.php#Ejemplos">Ejemplos</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Instalacion/SO/S.O-Distribuido.html#Concepto">Concepto</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Instalacion/SO/S.O-Distribuido.html#Características">Características</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Instalacion/SO/S.O-Distribuido.html#Ejemplos">Ejemplos</a></li>
                                             </ul>
                                         </li>
                                 </ul>
                             </li>                         
                         </ul>
-                        <!-- <form class="d-flex mt-3" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-success" type="submit">Search</button>
-                        </form> -->
                     </div>
                 </div>
             </div>
         </nav>      
+    <!-- Fin Navbar -->
+    <!-- Header -->
+        <div class="banner-img w-100 vh-100 d-flex justify-content-center align-items-center">
+            <div class="container">
+                <div class="bg-white rounded-pill shadow-lg bg-opacity-75" >
+                    <h1  class="text-center fw-bold text-dark p-2">
+                        Instalacion y mantenimiento de <strong>hardware</strong> y <strong>software</strong>
+                    </h1>
+                    <h2 class="text-center fw-bold text-dark p-2">Evolucion de la computadora</h2>
+                </div>
+            </div>
+        </div>
+    <!-- Fin Header -->
+        <div class="container-fluid">
+            <h1 class="text-center pt-5 mt-5 pb-3 mb-3 text-bg-info text-light">Linea del tiempo</h1>
+            <div id="timeline"></div>    
+        </div>
+    <!-- Js -->
+        <script src="../../Public/js/Jquery.js"></script>
+        <script src="../../Public/js/Evolucion-pc.js"></script>
+        <script src="../../Public/js/bootstrap.bundle.js"></script>
+</body>
+</html>

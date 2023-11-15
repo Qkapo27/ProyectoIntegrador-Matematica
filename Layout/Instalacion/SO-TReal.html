@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalacion y mantenimiento de hardware y software</title>
+    <link rel="shortcut icon" href="../../Public/Img/Logo.png" class="">
+    <link rel="stylesheet" href="../../Public/css/bootstrap.css">
+    <link rel="stylesheet" href="../../Public/css/timeline.css">
+    <style>
+        *{
+            font-family: monospace;
+        }
+        .banner-img{
+            background-image: url(../../Public/Img/portadaIns.jpg);
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="../../Public/Img/Logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+                    </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li><a class="dropdown-item" href="../../index.html">Inicio</a></li>
+                            <!-- Matematica -->
+                            <li class="nav-item dropdown mb-3 mt-3">
+                                <a class="nav-link dropdown-toggle btn btn-outline-info fs-5 fw-bold" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                    Matematica
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <!-- GeoGebra -->
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle text-dark px-1" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                                GeoGebra
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="../../Layout/Matematica/Geogebra.html#Concepto">Concepto</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Matematica/Geogebra.html#Características">Características básicas</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Matematica/Geogebra.html#Funciones">Funciones principales</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Matematica/Geogebra.html#Ventajas">Ventajas y Desventajas</a></li>
+                                            </ul>
+                                        </li>
+                                    <!-- Derivadas -->
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle text-dark px-1" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                                Derivadas
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item " href="../../Layout/Matematica/Derivadas.html#Concepto">Concepto</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Matematica/Derivadas.html#usos">Algunos usos</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Matematica/Derivadas.html#física">Uso en la física</a></li>
+                                                <hr>
+                                                <p class="text-center">Temas Nuevos</p>
+                                                <hr>
+                                                <li><a class="dropdown-item " href="../../Layout/Matematica/Derivadas.html#Compuestas">Compuestas</a></li>
+                                            </ul>
+                                        </li>
+                                        <!-- Maximos y minimos -->
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle text-dark px-1" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                                Maximos y minimos
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item " href="../../Layout/Matematica/MyM.html#Concepto">Concepto</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Matematica/MyM.html#Concavidad">Concavidad</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Matematica/MyM.html#Punto">Punto de Inflexión</a></li>
+                                                <hr>
+                                                <li><a class="dropdown-item " href="../../Layout/Matematica/Derivadas.html#Compuestas">Compuestas</a></li>
+                                            </ul>
+                                        </li>
+                                    <!-- Integrales -->
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle text-dark px-1" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                                Integrales
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="../../Layout/Matematica/Integrales.html#Concepto">Concepto</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Matematica/Integrales.html#usos">Algunos usos</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Matematica/Integrales.html#indefinida">Integral indefinida</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Matematica/Integrales.html#definida">Integral definida</a></li>
+                                            </ul>
+                                        </li>
+                                </ul>
+                            </li>    
+                            <!-- Redes de Datos -->
+                            <li class="nav-item dropdown mb-3">
+                                <a class="nav-link dropdown-toggle btn btn-outline-info fs-5 fw-bold" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                    Redes de datos
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <!-- Página web -->
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle text-dark px-1" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                                Página web
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="../../Layout/Redes/Pagina-web.html#Concepto">Concepto</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Redes/Pagina-web.html#Lenguajes">Lenguajes</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Redes/Pagina-web.html#Desarrollo">Desarrollo sostenible</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Redes/Pagina-web.html#Internet">Internet</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Redes/Pagina-web.html#Comunicación">Comunicación</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Redes/Pagina-web.html#Sirve">Para que sirve</a></li>
+                                            </ul>
+                                        </li>
+                                    <!-- proteger -->
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle text-dark px-1" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                                Proteger identidad en internet
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="../../Layout/Redes/Proteger-Identidad.html#Concepto">Concepto</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Redes/Proteger-Identidad.html#Elementos">Elementos</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Redes/Proteger-Identidad.html#Consejos">Consejos </a></li>
+                                            </ul>
+                                        </li>
+                                    <!-- Tecnologia Inalambrica -->
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle text-dark px-1" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                                Tecnologia Inalambrica
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="../../Layout/Redes/Tecnologia-Inalambrica.html#Concepto">Concepto</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Redes/Tecnologia-Inalambrica.html#Tecnologia">Tecnologias</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Redes/Tecnologia-Inalambrica.html#5G">Tecnologia 5G</a></li>
+                                            </ul>
+                                        </li>
+                                </ul>
+                            </li>       
+                            <!-- Instalacion y Mantenimiento -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle btn btn-outline-info fs-5 fw-bold" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                    Instalacion y Mantenimiento <br> de Hardware y Software
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <!-- Dominio nivel superior -->
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle text-dark px-1" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                                Dominio de nivel superior
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="../../Layout/Instalacion/Dominio.html#Concepto">Concepto</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Instalacion/Dominio.html#Fiabilidad">Fiabilidad</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Instalacion/Dominio.html#Dominios">Dominios de nivel Superior</a></li>
+                                            </ul>
+                                        </li>
+                                    <!-- Netiqueta -->
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle text-dark px-1" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                                Netiqueta
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="../../Layout/Instalacion/Netiqueta.html#Concepto">Concepto</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Instalacion/Netiqueta.html#Sirve">Para que sirve</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Instalacion/Netiqueta.html#Reglas">Reglas </a></li>
+                                            </ul>
+                                        </li>
+                                    <!-- Línea del tiempo -->
+                                        <li ><a class="nav-link text-dark px-1" href="Layout/Instalacion/Evolucion.html">Linea del tiempo</a></li>
+                                    <!-- SO en Tiempo Real-->
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle text-dark px-1" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                                Sistema Operativo en Tiempo Real
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="../../Layout/Instalacion/SO-TReal.html#Concepto">Concepto</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Instalacion/SO-TReal.html#Características">Características</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Instalacion/SO-TReal.html#Aplicaciones">Aplicaciones</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Instalacion/SO-TReal.html#Campos">Campos de Aplicación</a></li>
+                                            </ul>
+                                        </li>
+                                    <!-- SO Embebido-->
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle text-dark px-1" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                                Sistema Operativo Embebido
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="../../Layout/Instalacion/SO/S.O-Embebido.html#Concepto">Concepto</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Instalacion/SO/S.O-Embebido.html#Características">Características</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Instalacion/SO/S.O-Embebido.html#Ejemplos">Ejemplos</a></li>
+                                            </ul>
+                                        </li>
+                                    <!-- SO Distribuido-->
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle text-dark px-1" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                                Sistema Operativo Distribuido
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="../../Layout/Instalacion/SO/S.O-Distribuido.html#Concepto">Concepto</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Instalacion/SO/S.O-Distribuido.html#Características">Características</a></li>
+                                                <li><a class="dropdown-item" href="../../Layout/Instalacion/SO/S.O-Distribuido.html#Ejemplos">Ejemplos</a></li>
+                                            </ul>
+                                        </li>
+                                </ul>
+                            </li>                         
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>      
+    <!-- Fin Navbar -->
+    <!-- Header -->
+        <div class="banner-img w-100 vh-100 d-flex justify-content-center align-items-center">
+            <div class="container">
+                <div class="bg-white rounded-pill shadow-lg bg-opacity-75" >
+                    <h1  class="text-center fw-bold text-dark p-2">
+                        Instalacion y mantenimiento de <strong>hardware</strong> y <strong>software</strong>
+                    </h1>
+                    <h2 class="text-center fw-bold text-dark p-2">Sistema Operativos en <strong>Tiempo real</strong></h2>
+                </div>
+            </div>
+        </div>
+    <!-- Fin Header -->
+    <div class="container pt-5">
+        <!-- Concepto -->
+            <div class="card mb-3" id="Concepto">
+                <div class="row g-0">
+                    <div class="col-md-1"></div>
+                    <!-- Texto -->
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h5 class="card-title fs-2 text-bg-info">Concepto</h5>
+                            <hr>
+                            <p class="card-text fs-4">
+                                Un sistema operativo en tiempo real (RTOS, por sus siglas en inglés, Real-Time Operating System) es un tipo de sistema operativo diseñado específicamente para gestionar tareas y procesos con requisitos de tiempo real. Los sistemas en tiempo real son críticos para aplicaciones en las que la velocidad de procesamiento y la capacidad de respuesta son esenciales. Aquí tienes información sobre los conceptos, características, aplicaciones y campos de aplicación de los sistemas operativos en tiempo real:
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Img -->
+                    <div class="col-md-4">
+                        <img src="../../Public/Img/Assets/Ins/SO/Tiempo-real.jpg" class="img-fluid rounded-start mt-5 pt-5" alt="...">
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+            
+        <!-- Características -->
+            <div class="card mt-5 bg-light mb-5" id="Características">
+                <h1 class="text-center bg-light"><strong class="text-info">Características</strong></h1>
+                <div class="card ">
+                    <div class="row g-0">
+                        <!-- Ventajas -->
+                            <div class="col-md-12">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <ul class="list-group list-group-numbered">
+                                            <li class="list-group-item fs-5">
+                                                <strong class="text-success fs-4">Control Industrial</strong>: Se utilizan para controlar maquinaria y procesos en tiempo real en la industria manufacturera y procesos químicos.
+                                            </li>
+                                            <li class="list-group-item fs-5">
+                                                <strong class="text-success fs-4">Manejo de Interrupciones Eficiente</strong>: Son capaces de procesar ráfagas de miles de interrupciones por segundo sin perder eventos importantes, lo que los hace ideales para aplicaciones donde las interrupciones son frecuentes.
+                                            </li>
+                                            <li class="list-group-item fs-5">
+                                                <strong class="text-success fs-4">Tiempo real duro o blando</strong>: Los RTOS pueden ser de tiempo real duro, donde la respuesta se considera crítica y debe ser instantánea, o de tiempo real suave, donde se permiten ciertas desviaciones en los plazos.
+                                            </li>
+                                            <li class="list-group-item fs-5">
+                                                <strong class="text-success fs-4">Multitarea en tiempo real</strong>: Los RTOS son eficientes para administrar múltiples tareas que se ejecutan simultáneamente.
+                                            </li>
+                                            <li class="list-group-item fs-5">
+                                                <strong class="text-success fs-4">Gestión de Memoria Eficiente</strong>: La gestión de memoria en los RTOS es menos exigente que en sistemas de tiempo compartido, ya que los procesos suelen ser residentes permanentemente en la memoria para garantizar una respuesta rápida.
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        <!-- Aplicaciones -->
+            <div class="card mt-5" id="Aplicaciones">
+                <h1 class="text-center text-bg-info">Aplicaciones</h1>
+                <!-- Automatización industrial -->
+                <div class="row g-0 p-3">
+                    <div class="col-md-4">
+                        <img src="../../Public/Img/Assets/Ins/SO/Automatización industrial.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title fs-2 text-info">Automatización industrial</h5>
+                            <hr>
+                            <p class="card-text fs-3">
+                                Control de maquinaria, robótica industrial y sistemas de control de procesos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <!-- Automoción -->
+                <div class="row g-0">
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title fs-2 text-info">Automoción
+                            </h5>
+                            <hr>
+                            <p class="card-text fs-3">
+                                Sistemas de control del motor, frenado y seguridad, así como en vehículos autónomos.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="../../Public/Img/Assets/Ins/SO/Automoción.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                </div>
+                <hr>
+                <!-- Electrónica de consumo -->
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../../Public/Img/Assets/Ins/SO/Electrónica de consumo.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title fs-2 text-info">Electrónica de consumo</h5>
+                            <hr>
+                            <p class="card-text fs-3">
+                                Dispositivos multimedia, como reproductores de DVD y sistemas de entretenimiento en el automóvil.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <!-- Aeroespacial y defensa -->
+                <div class="row g-0">
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title fs-2 text-info">Aeroespacial y defensa</h5>
+                            <hr>
+                            <p class="card-text fs-3">
+                                Sistemas de navegación, aviónica y control de misiles.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="../../Public/Img/Assets/Ins/SO/Aeroespacial y defensa.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                </div>
+            </div>
+        <!-- Campos de Aplicación -->
+            <div class="card mt-5" id="Campos">
+                <h1 class="text-center text-bg-info">Campos de Aplicación</h1>
+                <!-- Control en tiempo real -->
+                <div class="row g-0 p-3">
+                    <div class="col-md-4">
+                        <img src="../../Public/Img/Assets/Ins/SO/tiempo real.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title fs-2 text-info">Control en tiempo real</h5>
+                            <hr>
+                            <p class="card-text fs-3">
+                                Los RTOS se utilizan en sistemas de control de procesos industriales para garantizar la estabilidad y el rendimiento en tiempo real.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <!-- Seguridad crítica -->
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../../Public/Img/Assets/Ins/SO/Seguridad crítica.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title fs-2 text-info">Seguridad crítica</h5>
+                            <hr>
+                            <p class="card-text fs-3">
+                                En aplicaciones como la aeroespacial y la automoción, los RTOS se utilizan para garantizar la seguridad de los sistemas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <!-- Telecomunicaciones y redes -->
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../../Public/Img/Assets/Ins/SO/Telecomunicaciones y redes.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title fs-2 text-info">Telecomunicaciones y redes</h5>
+                            <hr>
+                            <p class="card-text fs-3">
+                                Los RTOS son esenciales para garantizar el funcionamiento eficiente de los dispositivos de red y los servicios de telecomunicaciones.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <!-- Salud y atención médica -->
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../../Public/Img/Assets/Ins/SO/Salud y atención médica.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title fs-2 text-info">Salud y atención médica</h5>
+                            <hr>
+                            <p class="card-text fs-3">
+                                Los equipos médicos dependen de RTOS para garantizar la precisión y la confiabilidad en tiempo real.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <!-- Robótica y automatización -->
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../../Public/Img/Assets/Ins/SO/Robótica y automatización.webp" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title fs-2 text-info">Robótica y automatización</h5>
+                            <hr>
+                            <p class="card-text fs-3">
+                                Los sistemas de robótica e automatización requieren RTOS para coordinar múltiples tareas y procesos de manera sincronizada.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <!-- Js -->
+        <script src="../../Public/js/Jquery.js"></script>
+        <script src="../../Public/js/Tecnologia-Inalambrica.js"></script>
+        <script src="../../Public/js/bootstrap.bundle.js"></script>
+</body>
+</html>

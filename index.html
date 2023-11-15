@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrador</title>
+    <link rel="shortcut icon" href="Public/Img/Logo.png" class="">
+    <link rel="stylesheet" href="Public/css/bootstrap.css">
+    <style>
+        *{
+            font-family: monospace;
+        }
+        .banner-img{
+            background-image: url(Public/Img/portada.jpg);
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="Public/Img/Logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+                </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li><a class="dropdown-item" href="#">Inicio</a></li>
+                        <!-- Matematica -->
+                        <li class="nav-item dropdown mb-3 mt-3">
+                            <a class="nav-link dropdown-toggle btn btn-outline-info fs-5 fw-bold" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                Matematica
+                            </a>
+                            <ul class="dropdown-menu">
+                                <!-- GeoGebra -->
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle text-dark px-1" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                            GeoGebra
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="Layout/Matematica/Geogebra.php#Concepto">Concepto</a></li>
+                                            <li><a class="dropdown-item" href="Layout/Matematica/Geogebra.php#Características">Características básicas</a></li>
+                                            <li><a class="dropdown-item" href="Layout/Matematica/Geogebra.php#Funciones">Funciones principales</a></li>
+                                            <li><a class="dropdown-item" href="Layout/Matematica/Geogebra.php#Ventajas">Ventajas y Desventajas</a></li>
+                                        </ul>
+                                    </li>
+                                <!-- Derivadas -->
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle text-dark px-1" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                            Derivadas
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item " href="Layout/Matematica/Derivadas.php#Concepto">Concepto</a></li>
+                                            <li><a class="dropdown-item" href="Layout/Matematica/Derivadas.php#usos">Algunos usos</a></li>
+                                            <li><a class="dropdown-item" href="Layout/Matematica/Derivadas.php#física">Uso en la física</a></li>
+                                            <hr>
+                                            <p class="text-center">Temas Nuevos</p>
+                                            <hr>
+                                            <li><a class="dropdown-item " href="Layout/Matematica/Derivadas.php#Compuestas">Compuestas</a></li>
+                                        </ul>
+                                    </li>
+                                    <!-- Maximos y minimos -->
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle text-dark px-1" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                            Maximos y minimos
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item " href="Layout/Matematica/MyM.php#Concepto">Concepto</a></li>
+                                            <li><a class="dropdown-item" href="Layout/Matematica/MyM.php#Concavidad">Concavidad</a></li>
+                                            <li><a class="dropdown-item" href="Layout/Matematica/MyM.php#Punto">Punto de Inflexión</a></li>
+                                            <hr>
+                                            <li><a class="dropdown-item " href="Layout/Matematica/Derivadas.php#Compuestas">Compuestas</a></li>
+                                        </ul>
+                                    </li>
+                                <!-- Integrales -->
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle text-dark px-1" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                            Integrales
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="Layout/Matematica/Integrales.php#Concepto">Concepto</a></li>
+                                            <li><a class="dropdown-item" href="Layout/Matematica/Integrales.php#usos">Algunos usos</a></li>
+                                            <li><a class="dropdown-item" href="Layout/Matematica/Integrales.php#indefinida">Integral indefinida</a></li>
+                                            <li><a class="dropdown-item" href="Layout/Matematica/Integrales.php#definida">Integral definida</a></li>
+                                        </ul>
+                                    </li>
+                            </ul>
+                        </li>    
+                        <!-- Redes de Datos -->
+                        <li class="nav-item dropdown mb-3">
+                            <a class="nav-link dropdown-toggle btn btn-outline-info fs-5 fw-bold" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                Redes de datos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <!-- Página web -->
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle text-dark px-1" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                            Página web
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="Layout/Redes/Pagina-web.php#Concepto">Concepto</a></li>
+                                            <li><a class="dropdown-item" href="Layout/Redes/Pagina-web.php#Lenguajes">Lenguajes</a></li>
+                                            <li><a class="dropdown-item" href="Layout/Redes/Pagina-web.php#Desarrollo">Desarrollo sostenible</a></li>
+                                            <li><a class="dropdown-item" href="Layout/Redes/Pagina-web.php#Internet">Internet</a></li>
+                                            <li><a class="dropdown-item" href="Layout/Redes/Pagina-web.php#Comunicación">Comunicación</a></li>
+                                            <li><a class="dropdown-item" href="Layout/Redes/Pagina-web.php#Sirve">Para que sirve</a></li>
+                                        </ul>
+                                    </li>
+                                <!-- proteger -->
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle text-dark px-1" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                            Proteger identidad en internet
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="Layout/Redes/Proteger-Identidad.php#Concepto">Concepto</a></li>
+                                            <li><a class="dropdown-item" href="Layout/Redes/Proteger-Identidad.php#Elementos">Elementos</a></li>
+                                            <li><a class="dropdown-item" href="Layout/Redes/Proteger-Identidad.php#Consejos">Consejos </a></li>
+                                        </ul>
+                                    </li>
+                                <!-- Tecnologia Inalambrica -->
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle text-dark px-1" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                            Tecnologia Inalambrica
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="Layout/Redes/Tecnologia-Inalambrica.php#Concepto">Concepto</a></li>
+                                            <li><a class="dropdown-item" href="Layout/Redes/Tecnologia-Inalambrica.php#Tecnologia">Tecnologias</a></li>
+                                            <li><a class="dropdown-item" href="Layout/Redes/Tecnologia-Inalambrica.php#5G">Tecnologia 5G</a></li>
+                                        </ul>
+                                    </li>
+                            </ul>
+                        </li>       
+                        <!-- Instalacion y Mantenimiento -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle btn btn-outline-info fs-5 fw-bold" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                Instalacion y Mantenimiento <br> de Hardware y Software
+                            </a>
+                            <ul class="dropdown-menu">
+                                <!-- Dominio nivel superior -->
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle text-dark px-1" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                            Dominio de nivel superior
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="Layout/Instalacion/Dominio.php#Concepto">Concepto</a></li>
+                                            <li><a class="dropdown-item" href="Layout/Instalacion/Dominio.php#Fiabilidad">Fiabilidad</a></li>
+                                            <li><a class="dropdown-item" href="Layout/Instalacion/Dominio.php#Dominios">Dominios de nivel Superior</a></li>
+                                        </ul>
+                                    </li>
+                                <!-- Netiqueta -->
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle text-dark px-1" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                            Netiqueta
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="Layout/Instalacion/Netiqueta.php#Concepto">Concepto</a></li>
+                                            <li><a class="dropdown-item" href="Layout/Instalacion/Netiqueta.php#Sirve">Para que sirve</a></li>
+                                            <li><a class="dropdown-item" href="Layout/Instalacion/Netiqueta.php#Reglas">Reglas </a></li>
+                                        </ul>
+                                    </li>
+                                <!-- Línea del tiempo -->
+                                    <li ><a class="nav-link text-dark px-1" href="Layout/Instalacion/Evolucion.php">Linea del tiempo</a></li>
+                                <!-- SO en Tiempo Real-->
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle text-dark px-1" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                            Sistema Operativo en Tiempo Real
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="Layout/Instalacion/SO-TReal.php#Concepto">Concepto</a></li>
+                                            <li><a class="dropdown-item" href="Layout/Instalacion/SO-TReal.php#Características">Características</a></li>
+                                            <li><a class="dropdown-item" href="Layout/Instalacion/SO-TReal.php#Aplicaciones">Aplicaciones</a></li>
+                                            <li><a class="dropdown-item" href="Layout/Instalacion/SO-TReal.php#Campos">Campos de Aplicación</a></li>
+                                        </ul>
+                                    </li>
+                                <!-- SO Embebido-->
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle text-dark px-1" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                            Sistema Operativo Embebido
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="Layout/Instalacion/SO/S.O-Embebido.php#Concepto">Concepto</a></li>
+                                            <li><a class="dropdown-item" href="Layout/Instalacion/SO/S.O-Embebido.php#Características">Características</a></li>
+                                            <li><a class="dropdown-item" href="Layout/Instalacion/SO/S.O-Embebido.php#Ejemplos">Ejemplos</a></li>
+                                        </ul>
+                                    </li>
+                                <!-- SO Distribuido-->
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle text-dark px-1" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                                            Sistema Operativo Distribuido
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="Layout/Instalacion/SO/S.O-Distribuido.php#Concepto">Concepto</a></li>
+                                            <li><a class="dropdown-item" href="Layout/Instalacion/SO/S.O-Distribuido.php#Características">Características</a></li>
+                                            <li><a class="dropdown-item" href="Layout/Instalacion/SO/S.O-Distribuido.php#Ejemplos">Ejemplos</a></li>
+                                        </ul>
+                                    </li>
+                            </ul>
+                        </li>                         
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>      
+    <!-- Fin Navbar -->
+    <!-- Header -->
+        <div class="banner-img w-100 vh-100 d-flex justify-content-center align-items-center">
+            <div class="container">
+                <div class="bg-white rounded-pill shadow-lg bg-opacity-75" >
+                    <h1  class="text-center fw-bold text-dark" >
+                        Integrador
+                    </h1>
+                    <p class="fw-bolder text-success fs-3 text-center">
+                        Integrantes:
+                        <ul class="list-group-flush">
+                            <li class="fw-bold text-dark list-group-item text-center fs-4">Cativa Alesandro</li>
+                            <li class="fw-bold text-dark list-group-item text-center fs-4">Vera Diego</li>
+                            <li class="fw-bold text-dark list-group-item text-center fs-4">Miranday Luca</li>
+                            <li class="fw-bold text-dark list-group-item text-center fs-4">Loyola Agustin</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    <!-- Fin Header -->
+    <div class="container">
+        <div class="container">
+            <!-- Matematica -->
+            <h1 class="text-center mt-5">Matematica</h1>
+            <h3 class="text-center">Temas</h3>
+            <div class="container mb-5">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <!-- GeoGebra -->
+                        <div class="col">
+                            <div class="card">
+                                <img src="Public/Img/Assets/Matematica/GeoGebra.png" class="card-img-top  mx-auto d-block mt-5 pt-3">
+                                <h5 class="text-center pt-3">
+                                    GeoGebra
+                                </h5>
+                                <p class="text-center pb-5">
+                                    Es un software de matemáticas dinámicas libre para todas las áreas de las matemáticas escolares. 
+                                </p>
+                                <a href="Layout/Matematica/Geogebra.php" class="btn btn-outline-info">Leer más</a>
+                            </div>
+                        </div>
+                    <!-- Derivadas -->
+                        <div class="col">
+                            <div class="card">
+                                <img src="Public/Img/Assets/Matematica/Derivada.jpg" class="card-img-top mx-auto d-block">
+                                <h5 class="text-center pt-3">
+                                    Derivadas.
+                                </h5>
+                                <p class="text-center">
+                                    La derivada es el resultado de un límite y representa la pendiente de la recta tangente a la gráfica de la función en un punto.
+                                </p>
+                                <a href="Layout/Matematica/Derivadas.php" class="btn btn-outline-info">Leer más</a>
+                            </div>
+                        </div>
+                    <!-- Integrales -->
+                        <div class="col">
+                            <div class="card">
+                                <img src="Public/Img/Assets/Matematica/Integrales.jpg" class="card-img-top mx-auto d-block mt-5">
+                                <h5 class="text-center pt-3">
+                                    Integrales
+                                </h5>
+                                <p class="text-center pb-4">
+                                    Administra de forma centralizada todas las áreas de recursos humanos en tu empresa bajo una única app.
+                                </p>
+                                <a href="Layout/Matematica/Integrales.php" class="btn btn-outline-info">Leer más</a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <!-- Redes de datos -->
+            <h1 class="text-center mt-5">Redes de datos</h1>
+            <h3 class="text-center">Temas</h3>
+            <div class="container mb-5">
+                
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <!-- Pagina web -->
+                        <div class="col">
+                            <div class="card">
+                                <img src="Public/Img/Assets/RD/PW.jpg" class="card-img-top  mx-auto d-block">
+                                <h5 class="text-center pt-3">
+                                    Pagina web
+                                </h5>
+                                <p class="text-center">
+                                    Es un componente fundamental de Internet y se utiliza para presentar contenido en línea de manera accesible y estructurada.
+                                </p>
+                                <a href="Layout/Redes/Pagina-web.php" class="btn btn-outline-info">Leer más</a>
+                            </div>
+                        </div>
+                    <!-- Proteger -->
+                        <div class="col">
+                            <div class="card">
+                                <img src="Public/Img/Assets/RD/Proteger.jpg" class="card-img-top mx-auto d-block">
+                                <h5 class="text-center pt-3">
+                                    Proteger identidad en internet.
+                                </h5>
+                                <p class="text-center pb-4">
+                                    Proteger la identidad en internet es asegurar la privacidad y seguridad de tus datos personales online.
+                                </p>
+                                <a href="Layout/Redes/Proteger-Identidad.php" class="btn btn-outline-info">Leer más</a>
+                            </div>
+                        </div>
+                    <!-- Tecnologia inalambricas -->
+                        <div class="col">
+                            <div class="card">
+                                <img src="Public/Img/Assets/RD/Tecnologia-Inalambrica.jpg" class="card-img-top mx-auto d-block pt-4" style="background-color: #63DB9E;">
+                                <h5 class="text-center pt-3">
+                                    Tecnologia inalambricas
+                                </h5>
+                                <p class="text-center">
+                                    Es aquella que permite la comunicación entre dispositivos sin la necesidad de conexiones físicas por cables.
+                                </p>
+                                <a href="Layout/Matematica/Tecnologia-Inalambrica.php" class="btn btn-outline-info">Leer más</a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <!-- Instalacion y Mantenimiento de HyS-->
+            <h1 class="text-center mt-5">Instalacion y Mantenimiento de <br><strong>Hardware y Software </strong></h1>
+            <h3 class="text-center">Temas</h3>
+            <div class="container mb-5">
+                
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <!-- Dominio nivel superior -->
+                        <div class="col">
+                            <div class="card">
+                                <div style="background-color: #F1F1F1;">
+                                    <img src="Public/Img/Assets/Ins/Dominio-Superior.webp" class="card-img-top  mx-auto d-block mt-5 pt-4" >
+                                </div>
+                                <h5 class="text-center pt-3">
+                                    Dominio nivel superior
+                                </h5>
+                                <p class="text-center mb-5">
+                                    Indica el tipo de organización o categoría a la que pertenece el sitio web.
+                                </p>
+                                <a href="Layout/Instalacion/Dominio.php" class="btn btn-outline-info">Leer más</a>
+                            </div>
+                        </div>
+                    <!-- Netiqueta -->
+                        <div class="col">
+                            <div class="card">
+                                <img src="Public/Img/Assets/Ins/Netiqueta.jpg" class="card-img-top mx-auto d-block">
+                                <h5 class="text-center pt-3">
+                                    Netiqueta.
+                                </h5>
+                                <p class="text-center mb-5">
+                                    La netiqueta es un conjunto de normas y reglas de etiqueta que se aplican al comportamiento en línea.
+                                </p>
+                                <a href="Layout/Instalacion/Netiqueta.php" class="btn btn-outline-info">Leer más</a>
+                            </div>
+                        </div>
+                    <!-- Linea del tiempo -->
+                        <div class="col">
+                            <div class="card">
+                                <img src="Public/Img/Assets/Ins/Evolucion.jpg" class="card-img-top mx-auto d-block pt-4">
+                                <h5 class="text-center pt-3">
+                                    Evolución de la computadora
+                                </h5>
+                                <p class="text-center">
+                                    La Evolución de las computadoras tiene una larga trayectoria y no comienza con el silicio y la electrónica.
+                                </p>
+                                <a href="Layout/Instalacion/Evolucion.php" class="btn btn-outline-info">Leer más</a>
+                            </div>
+                        </div>
+                        <!-- SO Tiempo Real -->
+                        <div class="col">
+                            <div class="card">
+                                <img src="Public/Img/Assets/Ins/SO.webp" class="card-img-top mx-auto d-block pt-4">
+                                <h5 class="text-center pt-3">
+                                    Sistema Operativo de <strong>Tiempo Real </strong>
+                                </h5>
+                                <p class="text-center">
+                                    Su prioridad es la respuesta inmediata a eventos en lugar de atender las necesidades del usuario.
+                                </p>
+                                <a href="Layout/Instalacion/SO-TReal.php" class="btn btn-outline-info">Leer más</a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Js -->
+        <script src="Public/js/Jquery.js"></script>
+        <script src="Public/js/bootstrap.bundle.js"></script>
+</body>
+</html>
